@@ -1,94 +1,104 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 /**
- * _putchar - puts character to standard output
- * @c: character to put to standard output
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and error is set appropriately.
  */
 
 int _putchar(char c);
 
-
 /**
- * reset_to_98 - takes a pointer to an int as parameter and updates the value it points to to 98
- * @n: pointer to int n
+ * print_alphabet - print lowercase alphabet
  */
 
-void reset_to_98(int *n);
+void print_alphabet(void);
+
 
 /**
- * swap_int - swaps the values of two integers
- * @a: integer to swap
- * @b: integer to swap
+ * print_alphabet_x10 - print lowercase alphabet ten times
  */
 
-void swap_int(int *a, int *b);
+void print_alphabet_x10(void);
 
 /**
- * main - returns the length of a string
- * @s: string
+ * _islower - checks for lowercase
+ * @c: the character to check
+ * Return: int
  */
 
-int _strlen(char *s);
+int _islower(int c);
 
 /**
- * _puts - prints a string, followed by a new line, to stdout
- * @str: string to print
+ * _isalpha - checks for alphabet character
+ * @c: character to check
+ * Return: 1 if lower or uppercase, 0 if not alphabet character
  */
 
-void _puts(char *str);
+int _isalpha(int c);
 
 /**
- * print_rev - prints a string, in reverse, followed by a new line
- * @s: string to reverse
+ * print_sign - print sign of number
+ * @n: number to check
+ * Return: 1 if greater than 0, 0 if 0, -1 if less than 0
  */
 
-void print_rev(char *s);
+int print_sign(int n);
 
 /**
- * print_rev - reverses a string
- * @s: string to reverse
+ * _abs - computer absolute value of integer
+ * @int: integer
+ * Return: absolute value
  */
 
-void rev_string(char *s);
+int _abs(int);
 
 /**
- * puts2 - prints every second character of a string, followed by a new line
- * @str: string to print
+ * print_last_digit - print last digit of integer
+ * @int: integer
+ * Return: last digit of number
  */
 
-void puts2(char *str);
+int print_last_digit(int);
 
 /**
- * puts_half - prints half of a string, followed by a new line
- * @str: string to print
+ * jack_bauer - print every minute of a day
+ * Description: print minutes 00:00 to 23:59
  */
 
-void puts_half(char *str);
+void jack_bauer(void);
+
 
 /**
- * print_array - prints n elements of an array of integers, followed by a new line
- * @a: array
- * @n: number of elements
+ * times_table - print multiplication table
  */
 
-void print_array(int *a, int n);
+void times_table(void);
 
 /**
- * _strcpy - copies the string pointed to by src, including the terminating null byte (\0),
- * to the buffer pointed to by dest
- * @dest: copy source to this buffer
- * @src: this is the source to copy
+ * add - add two integers
+ * @a: first integer
+ * @b: second integer
+ * Return: sum
  */
 
-char *_strcpy(char *dest, char *src);
+int add(int a, int b);
 
 /**
- * _atoi - convert string to int
- * @s: string to convert
- * Return: integer
+ * print_to_98 - print numbers n to 98
+ * @n: integer argument
  */
 
-int _atoi(char *s);
+void print_to_98(int n);
+
+/**
+ * print_times_table - print multiplication table up to n
+ * @n: integer argument
+ */
+
+void print_times_table(int n);
 
 #endif
